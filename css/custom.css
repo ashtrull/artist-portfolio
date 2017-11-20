@@ -11,7 +11,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Belleza', sans-serif;
+  font-family: 'Amatic SC', cursive;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 36px;
 }
 
 hr {
@@ -20,7 +32,8 @@ border-width: 3px;
 border-color: #FFB515; }
 
 p {
-  font-family: 'Oswald', sans-serif;;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
 }
 
 .bg-primary {
@@ -68,7 +81,7 @@ align-items: center;
 
 .title {
   font-family: 'Amatic SC', cursive;
-  font-size: 112px;
+  font-size: 96px;
 }
 
 .work-section {
@@ -78,8 +91,13 @@ align-items: center;
  .text-primary {
     color: #10BFA2 !important; }
 
+#mainNav {
+  background-color: #10BFA2;
+}
 #mainNav .navbar-brand {
     color: #10BFA2;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
   }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #10BFA2; }
