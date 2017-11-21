@@ -26,6 +26,10 @@ h4 {
   font-size: 36px;
 }
 
+header.masthead {
+  background-image: url(../img/eli-dino-filter.jpeg)
+}
+
 hr {
 max-width: 50px;
 border-width: 3px;
@@ -56,13 +60,13 @@ background-color: #10BFA2 !important; }
 display: flex;
 flex-direction: row;
 justify-content: center;
-align-items: center;
+align-items: stretch;
 }
 
 
 .portfolio-box {
-    height: 600px;
-    max-width: 350px;
+    height: 500px;
+    max-width: 375px;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -75,9 +79,19 @@ align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 600px;
+    height: 500px;
     background: black;
 }
+
+.portfolio-img {
+  height: 250px;
+  width: 375px;
+}
+
+.sub-title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 56px;
+    }
 
 .title {
   font-family: 'Amatic SC', cursive;
@@ -111,6 +125,9 @@ align-items: center;
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
       color: #10BFA2 !important;
      }
+
+
+
      @media (min-width: 992px) {
           #mainNav .navbar-brand {
             color: rgba(255, 255, 255, 0.7); }
@@ -134,4 +151,16 @@ align-items: center;
               color: #212529; }
               #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
               #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-                color: #10BFA2; } }
+                color: #10BFA2; }
+               }
+     @media (max-width: 991px) and (min-width: 600px) {
+                 .sub-title {
+                   font-size: 42px;
+                   }
+               }
+
+    @media (max-width: 768px) {
+                  .sub-title {
+                    font-size: 32px;
+                  }
+                }
