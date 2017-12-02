@@ -1,10 +1,10 @@
 a {
-    color: #10BFA2;
+    color: #0699D1;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s; }
     a:hover {
-      color: #10BFA2; }
+      color: #0699D1; }
 
 h2,
 h3,
@@ -27,7 +27,10 @@ h4 {
 }
 
 header.masthead {
-  background-image: url(../img/eli-dino-filter.jpeg)
+  background-image: url(../img/eli-dino.jpg);
+  border-color: pink;
+  border-width: 5px;
+  height: 800px;
 }
 
 hr {
@@ -41,16 +44,16 @@ p {
 }
 
 .bg-primary {
-background-color: #10BFA2 !important; }
+background-color: #0699D1 !important; }
 
 .btn-primary {
     background-color: #F05F40;
-    border-color: #10BFA2; }
+    border-color: #0699D1; }
     .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
       color: #fff;
       background-color: #ee4b28 !important; }
     .btn-primary:active, .btn-primary:focus {
-      box-shadow: 0 0 0 0.2rem #10BFA2 !important; }
+      box-shadow: 0 0 0 0.2rem #0699D1 !important; }
 
 .fa {
   color: #FFB515;
@@ -71,7 +74,7 @@ align-items: stretch;
 
 .portfolio-box .portfolio-box-caption {
     color: #fff;
-    background: #10BFA2;
+    background: #0699D1;
  }
 
 
@@ -88,12 +91,20 @@ align-items: stretch;
   width: 375px;
 }
 
+.shadow {
+  background-color: rgba(0, 0, 0, 0.4);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  border-radius: 50%;
+}
+
 .sub-title {
   font-family: 'Amatic SC', cursive;
   font-size: 56px;
+  margin: 50px;
     }
 
 .title {
+  color: #fff;
   font-family: 'Amatic SC', cursive;
   font-size: 96px;
 }
@@ -103,27 +114,27 @@ align-items: stretch;
 }
 
  .text-primary {
-    color: #10BFA2 !important; }
+    color: #0699D1 !important; }
 
 #mainNav {
-  background-color: #10BFA2;
+  background-color: #0699D1;
 }
 #mainNav .navbar-brand {
-    color: #10BFA2;
+    color: #0699D1;
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
   }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #10BFA2; }
+      color: #0699D1; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
     color: #212529; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-      color: #10BFA2; }
+      color: #0699D1; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-      color: #10BFA2 !important;
+      color: #0699D1 !important;
      }
 
 
@@ -143,15 +154,15 @@ align-items: stretch;
             border-bottom: 1px solid rgba(33, 37, 41, 0.1);
             background-color: #fff; }
             #mainNav.navbar-shrink .navbar-brand {
-              color: #10BFA2; }
+              color: #0699D1; }
               #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-                color: #10BFA2; }
+                color: #0699D1; }
             #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
             #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
               color: #212529; }
               #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
               #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-                color: #10BFA2; }
+                color: #0699D1; }
                }
      @media (max-width: 991px) and (min-width: 600px) {
                  .sub-title {
