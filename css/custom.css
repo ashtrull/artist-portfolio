@@ -110,11 +110,12 @@ align-items: stretch;
 }
 
 .work-section {
-    margin-top: 100px;
+  margin-top: 2rem;
+  padding-top: 40px;
 }
 
  .text-primary {
-    color: #0699D1 !important; }
+    color: s !important; }
 
 #mainNav {
   background-color: #0699D1;
