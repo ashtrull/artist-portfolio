@@ -1,36 +1,41 @@
 a {
-    color: #0699D1;
+    color: #03B5AA;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s; }
     a:hover {
-      color: #0699D1; }
-
-h2,
+      color: #03B5AA; }
 h3,
+h4,
 h5,
 h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
   font-family: 'Amatic SC', cursive;
+  font-size: 85px;
 }
 
 h2 {
+  font-family: 'Amatic SC', cursive;
   font-size: 64px;
 }
 
 h3 {
-  font-size: 48px;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: underline;
 }
 
-h4 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 36px;
-}
 
 header.masthead {
   background-image: url(https://i.imgur.com/NqaJzCB.jpg);
-  border-color: pink;
-  border-width: 5px;
-  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 750px;
+  margin-top: 70px;
+  padding: 0px;
 }
 
 hr {
@@ -39,7 +44,7 @@ border-width: 3px;
 border-color: #FFB515; }
 
 p {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 22px;
 }
 
@@ -52,16 +57,18 @@ section {
 }
 
 .bg-primary {
-background-color: #0699D1 !important; }
+background-color: #03B5AA !important; }
 
 .btn-primary {
     background-color: #F05F40;
-    border-color: #0699D1; }
+    border-color: #03B5AA;
+    margin: auto;
+  }
     .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
       color: #fff;
       background-color: #ee4b28 !important; }
     .btn-primary:active, .btn-primary:focus {
-      box-shadow: 0 0 0 0.2rem #0699D1 !important; }
+      box-shadow: 0 0 0 0.2rem #03B5AA !important; }
 
 .contact-container {
   display: flex;
@@ -106,6 +113,11 @@ background-color: #0699D1 !important; }
   width: 600px;
 }
 
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
 .popup-gallery {
 display: flex;
 flex-direction: row;
@@ -121,7 +133,7 @@ align-items: stretch;
 
 .portfolio-box .portfolio-box-caption {
     color: #fff;
-    background: #0699D1;
+    background: #03B5AA;
  }
 
 
@@ -137,19 +149,14 @@ align-items: stretch;
   height: 275px;
 }
 
-.shadow {
-  background-color: rgba(0, 0, 0, 0.4);
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
-  border-radius: 50%;
-}
-
 .sub-title {
+  background-color: rgba(0, 0, 0, 0.3);
   font-family: 'Amatic SC', cursive;
   font-size: 56px;
-  margin: 50px;
     }
 
 .title {
+  background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
   font-family: 'Amatic SC', cursive;
   font-size: 96px;
@@ -164,24 +171,24 @@ align-items: stretch;
     color: s !important; }
 
 #mainNav {
-  background-color: #0699D1;
+  background-color: #03B5AA;
 }
 #mainNav .navbar-brand {
-    color: #0699D1;
+    color: #03B5AA;
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
   }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #0699D1; }
+      color: #03B5AA; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
     color: #212529; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-      color: #0699D1; }
+      color: #03B5AA; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-      color: #0699D1 !important;
+      color: #03B5AA !important;
      }
 
 
@@ -201,15 +208,15 @@ align-items: stretch;
             border-bottom: 1px solid rgba(33, 37, 41, 0.1);
             background-color: #fff; }
             #mainNav.navbar-shrink .navbar-brand {
-              color: #0699D1; }
+              color: #03B5AA; }
               #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-                color: #0699D1; }
+                color: #03B5AA; }
             #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
             #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
               color: #212529; }
               #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
               #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-                color: #0699D1; }
+                color: #03B5AA; }
                }
      @media (max-width: 991px) and (min-width: 600px) {
                  .sub-title {
