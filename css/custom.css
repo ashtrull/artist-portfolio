@@ -4,7 +4,7 @@ a {
     -moz-transition: all 0.2s;
     transition: all 0.2s; }
     a:hover {
-      color: #03B5AA; }
+      color: #fff; }
 h3,
 h4,
 h5,
@@ -13,12 +13,12 @@ h6 {
 }
 
 h1 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 85px;
 }
 
 h2 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 64px;
 }
 
@@ -33,7 +33,7 @@ header.masthead {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 750px;
+  height: 700px;
   margin-top: 80px;
   padding: 0px;
 }
@@ -54,6 +54,10 @@ section {
   flex-direction: column;
   justify-content: space-between;
   min-height: 700px;
+}
+
+.about-img {
+  height: 300px;
 }
 
 .bg-primary {
@@ -151,8 +155,8 @@ align-items: stretch;
 
 .sub-title {
   background-color: rgba(0, 0, 0, 0.3);
-  font-family: 'Amatic SC', cursive;
-  font-size: 56px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
     }
 
 .title {
