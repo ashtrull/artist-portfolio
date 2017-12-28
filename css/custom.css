@@ -1,11 +1,16 @@
+@media (max-width: 767px) {
+    body > .container { overflow: hidden; } /* fix */
+    body > .container > * { overflow: visible; } /* reset back to normal */
+}
+
 a {
-    color: #03B5AA;
+    color: #FFB515;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s; }
     a:hover {
-      color: #03B5AA; }
-h3,
+      color: #F05F40; }
+
 h4,
 h5,
 h6 {
@@ -13,12 +18,12 @@ h6 {
 }
 
 h1 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 85px;
 }
 
 h2 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 64px;
 }
 
@@ -30,12 +35,38 @@ h3 {
 
 header.masthead {
   background-image: url(https://i.imgur.com/NqaJzCB.jpg);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 750px;
-  margin-top: 80px;
-  padding: 0px;
+  height: 900px;
+}
+
+@media (min-width:0px) {
+  header {
+    height: 500px;
+  }
+  header.masthead {
+    background-position: 0 0 ;
+    height: 700px;
+    margin-top: 75px;
+  }
+}
+@media (min-width: 768px) {
+  header.masthead {
+    background-position: 0 0;
+    height: 800px;
+    margin-top: 75px;
+  }
+}
+@media (min-width: 992px) {
+  header.masthead {
+    background-position: 0 5px;
+    height: 1000px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead {
+    background-position: 0 5px;
+    height: 1000px;
+  }
 }
 
 hr {
@@ -56,6 +87,22 @@ section {
   min-height: 700px;
 }
 
+.about-img {
+  height: 300px;
+  margin: auto;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  margin: 10px 0;
+}
+
 .bg-primary {
 background-color: #03B5AA !important; }
 
@@ -71,9 +118,9 @@ background-color: #03B5AA !important; }
       box-shadow: 0 0 0 0.2rem #03B5AA !important; }
 
 .contact-container {
+  align-items: stretch;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
   justify-content: space-around;
   width: 75%;
 }
@@ -97,8 +144,8 @@ background-color: #03B5AA !important; }
 }
 
 .fuel-img {
-  height: 200px;
-  margin: 0px 20px;
+  height: 400px;
+  margin: 0 20px;
 }
 
 .fuel-item {
@@ -109,8 +156,45 @@ background-color: #03B5AA !important; }
   margin-top: 20px;
 }
 
+.fuel-sources-list {
+  margin-left: 100px;
+}
+
 .fuel-text {
   width: 600px;
+}
+
+.header-buffer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 900px;
+}
+
+@media (min-width:0px) {
+  .header-buffer {
+    height: 750px;
+  }
+}
+@media (min-width: 768px) {
+  .header-buffer {
+    height: 800px;
+  }
+}
+@media (min-width: 992px) {
+  .header-buffer {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-buffer {
+    height: 1000px;
+  }
+}
+
+.modal {
+  width: 100%;
 }
 
 .modal-body {
@@ -118,11 +202,15 @@ background-color: #03B5AA !important; }
   flex-direction: column;
 }
 
+.modal-dialog {
+  width: 100%;
+}
+
 .popup-gallery {
+align-items: stretch;
 display: flex;
 flex-direction: row;
 justify-content: center;
-align-items: stretch;
 }
 
 
@@ -132,35 +220,38 @@ align-items: stretch;
 }
 
 .portfolio-box .portfolio-box-caption {
-    color: #fff;
     background: #03B5AA;
+    color: #fff;
  }
 
 
 .portfolio-img-frame {
+    background: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 275px;
-    background: black;
+    justify-content: center;
 }
 
 .portfolio-img {
   height: 275px;
 }
 
-.sub-title {
-  background-color: rgba(0, 0, 0, 0.3);
-  font-family: 'Amatic SC', cursive;
-  font-size: 56px;
-    }
-
-.title {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  font-family: 'Amatic SC', cursive;
-  font-size: 96px;
+.portfolio-img-sm {
+  height: 150px;
+  margin: 2px 50px 2px 0;
 }
+
+.portfolio-modal {
+  width: 100%;
+}
+
+.titles {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #e38957;
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+    }
 
 .work-section {
   margin-top: 2rem;
@@ -174,7 +265,7 @@ align-items: stretch;
   background-color: #03B5AA;
 }
 #mainNav .navbar-brand {
-    color: #03B5AA;
+    color: rgba(255, 255, 255, 0.7);
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
   }
@@ -219,13 +310,13 @@ align-items: stretch;
                 color: #03B5AA; }
                }
      @media (max-width: 991px) and (min-width: 600px) {
-                 .sub-title {
+                 .titles {
                    font-size: 42px;
                    }
                }
 
     @media (max-width: 768px) {
-                  .sub-title {
+                  .titles {
                     font-size: 32px;
                   }
                 }
