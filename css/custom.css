@@ -287,6 +287,16 @@ justify-content: center;
     color: #fff;
  }
 
+.portfolio-gallery {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.portfolio-gallery-img {
+  height: 150px;
+}
 
 .portfolio-img-frame {
     background: black;
