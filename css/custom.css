@@ -292,10 +292,12 @@ justify-content: center;
   flex-direction: row;
   align-items:center;
   justify-content:space-around;
+  margin: auto;
+  width: 800px;
 }
 
 .portfolio-gallery-img {
-  height: 150px;
+  height: 200px;
 }
 
 .portfolio-img-frame {
@@ -315,6 +317,22 @@ justify-content: center;
   margin: 2px 50px 2px 0;
 }
 
+.portfolio-item {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 40px;
+}
+
+.portfolio-item-description {
+  align-self: center;
+}
+
+.portfolio-item-img {
+  width: 300px;
+  margin-right: 30px;
+}
 .portfolio-modal {
   width: 100%;
 }
