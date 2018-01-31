@@ -162,10 +162,11 @@ section {
 }
 
 .contact-container {
-  align-items: stretch;
+  align-items: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  float: left;
+  justify-content:center;
   width: 100%;
 }
 
@@ -178,6 +179,7 @@ section {
   border-style: solid;
   border-width: 2px;
   color: white;
+  float: left;
   height: 50vw;
   width: 50vw;
 }
@@ -191,7 +193,11 @@ section {
 }
 
 .fuel-container {
-  height: 100vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
   margin: 0 auto;
   padding: 2px;
   width: 90%;
