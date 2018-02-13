@@ -87,6 +87,10 @@ p {
   font-size: 22px;
 }
 
+p #quote-attr {
+  font-size: 14px;
+}
+
 section {
   align-items: center;
   display: flex;
@@ -158,15 +162,18 @@ section {
 }
 
 .contact-box-caption {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
     padding-top: 45%;
 }
 
 .contact-container {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   float: left;
   justify-content:center;
+  padding: 30px;
   width: 100%;
 }
 
@@ -181,7 +188,21 @@ section {
   color: white;
   float: left;
   height: 50vw;
+  min-height: 300px;
+  min-width: 300px;
   width: 50vw;
+}
+
+@media (max-width:599px) {
+  .contact-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    float: none;
+    justify-content:center;
+    width: 100%;
+  }
+
 }
 
 .contact-section {
@@ -190,6 +211,11 @@ section {
 
 .fa {
   color: #FFB515;
+}
+
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
 
 .fuel-container {
@@ -387,18 +413,20 @@ justify-content: center;
   flex-direction: row;
   align-items:center;
   justify-content:space-around;
-  margin: auto;
-  margin-top: 0;
+  margin: 60px auto;
   height: 150px;
-  width: 80%;
+  max-height: 150px;
+  overflow: hidden;
+  width: 95%;
+  max-width: 800px;
 }
 
 .portfolio-gallery-img {
   /* clip: rect(0px,60px,100px,0px); */
   height: auto;
   max-height: 175px;
-  /* object-fit: cover;
-  overflow-y: hidden; */
+  object-fit: cover;
+  overflow-y: hidden;
   width: 33.5%;
 }
 
@@ -424,15 +452,18 @@ justify-content: center;
   margin-top: 30px;
   width: 80%;
 }
+
 .project {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: left;
   margin-left: 0px;
-  margin-top: 120px;
+  margin-top: 80px;
   width: 100%;
 }
+
+
 
 .project-description {
   align-self: center;
@@ -454,6 +485,20 @@ justify-content: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 750px) {
+  .project {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .project-description {
+    margin-top: 30px;
+    width: 90%;
+  }
+  .project-img-container {
+    width: 90%;
+  }
 }
 
 .portfolio-modal {
