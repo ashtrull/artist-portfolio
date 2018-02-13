@@ -87,6 +87,10 @@ p {
   font-size: 22px;
 }
 
+p #quote-attr {
+  font-size: 14px;
+}
+
 section {
   align-items: center;
   display: flex;
@@ -158,15 +162,18 @@ section {
 }
 
 .contact-box-caption {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
     padding-top: 45%;
 }
 
 .contact-container {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   float: left;
   justify-content:center;
+  padding: 30px;
   width: 100%;
 }
 
@@ -181,7 +188,21 @@ section {
   color: white;
   float: left;
   height: 50vw;
+  min-height: 300px;
+  min-width: 300px;
   width: 50vw;
+}
+
+@media (max-width:599px) {
+  .contact-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    float: none;
+    justify-content:center;
+    width: 100%;
+  }
+
 }
 
 .contact-section {
@@ -190,6 +211,11 @@ section {
 
 .fa {
   color: #FFB515;
+}
+
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
 
 .fuel-container {
@@ -218,7 +244,6 @@ section {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-around;
   left: 0;
   position: absolute;
   top: 0;
@@ -228,14 +253,20 @@ section {
 }
 
 .fuel-sources-list {
-  width: 80%;
+    list-style-type: disc;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
+    width: 100%;
 }
 
 .fuel-text {
   color: black;
-  margin-left: 10%;
   font-size: 20em;
-  width: 90%;
+  margin-left: 3%;
+  margin-top: 5%;
+  width: 95%;
   z-index: 3;
 }
 
@@ -244,35 +275,66 @@ section {
 }
 
 .fuel-text ul {
-  font-size: 30px;
+  font-size: 32px;
 }
 
-@media (max-width: 800px) and (min-width: 650px) {
-            .fuel-text h4 {
-              font-size: 36px;
-              }
+@media (max-width: 1048px) and (min-width: 933px) {
             .fuel-text ul {
-              font-size: 24px;
+              font-size: 30px;
             }
           }
 
-@media (max-width: 650px) and (min-width: 450px) {
-    .fuel-text h4 {
-      font-size: 24px;
-      }
+@media (max-width: 933px) and (min-width: 760px) {
     .fuel-text ul {
-      font-size: 18px;
+      font-size: 24px;
       }
            }
 
-@media (max-width: 450px) {
-  .fuel-text h4 {
-    font-size: 20px;
-    }
+@media (max-width: 760px) and (min-width: 640px) {
+  .fuel-img-layer {
+    background-color: rgba(248, 247, 216, 0.5);
+  }
+  .fuel-sources-list {
+      -webkit-columns: 1;
+      -moz-columns: 1;
+      columns: 1;
+  }
   .fuel-text ul {
-    font-size: 16px;
+    font-size: 24px;
     }
 }
+
+@media (max-width: 640px) and (min-width: 574px){
+  .fuel-sources-list {
+      -webkit-columns: 1;
+      -moz-columns: 1;
+      columns: 1;
+  }
+  .fuel-text ul {
+    font-size: 20px;
+  }
+  .fuel-img-layer {
+    background-color: rgba(248, 247, 216, 0.5);
+}
+}
+
+@media (max-width: 574px) {
+  .fuel-header {
+    font-size: 48px;
+  }
+  .fuel-img-layer {
+    background-color: rgba(248, 247, 216, 0.5);
+}
+  .fuel-sources-list {
+      -webkit-columns: 1;
+      -moz-columns: 1;
+      columns: 1;
+  }
+  .fuel-text ul {
+    font-size: 18px;
+  }
+}
+
 
 .full-screen {
     width: 1000px;
@@ -351,18 +413,20 @@ justify-content: center;
   flex-direction: row;
   align-items:center;
   justify-content:space-around;
-  margin: auto;
-  margin-top: 0;
+  margin: 60px auto;
   height: 150px;
-  width: 80%;
+  max-height: 150px;
+  overflow: hidden;
+  width: 95%;
+  max-width: 800px;
 }
 
 .portfolio-gallery-img {
   /* clip: rect(0px,60px,100px,0px); */
   height: auto;
   max-height: 175px;
-  /* object-fit: cover;
-  overflow-y: hidden; */
+  object-fit: cover;
+  overflow-y: hidden;
   width: 33.5%;
 }
 
@@ -388,15 +452,18 @@ justify-content: center;
   margin-top: 30px;
   width: 80%;
 }
+
 .project {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: left;
   margin-left: 0px;
-  margin-top: 120px;
+  margin-top: 80px;
   width: 100%;
 }
+
+
 
 .project-description {
   align-self: center;
@@ -418,6 +485,20 @@ justify-content: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 750px) {
+  .project {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .project-description {
+    margin-top: 30px;
+    width: 90%;
+  }
+  .project-img-container {
+    width: 90%;
+  }
 }
 
 .portfolio-modal {

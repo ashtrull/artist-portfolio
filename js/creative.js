@@ -1,6 +1,8 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  function findUniq(arr) {
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -13,6 +15,13 @@
         return false;
       }
     }
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
@@ -71,5 +80,7 @@
   //     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
   //   }
   // });
+
+
 
 })(jQuery); // End of use strict
